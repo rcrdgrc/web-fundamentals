@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <center>
+
+        <h1>My Registration Form</h1>
+        <form action="process.php" method="post">
+
+            <label style="display: inline-block;text-align: left;width: 100px;" for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <br>
+            <br>
+
+            <label style="display: inline-block;text-align: left;width: 100px;"  for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <br>
+            <br>
+
+            <label style="display: inline-block;text-align: left;width: 100px;" for="email">Email:</label>
+            <input  type="text" id="email" name="email">
+            <br>
+            <br>
+
+            <label style="display: inline-block;text-align: left;width: 100px;" for="password">Password:</label>
+            <input type="text" id="password" name="password">
+            <br>
+            <br>
+
+            <label style="display: inline-block;text-align: left;width: 100px;" for="pw_confirm">PW `Confirmation:</label>
+            <input type="text" id="pw_confirm" name="pw_confirm">
+            <br>
+            <br>
+
+            <label for="bday">Birth Day:</label>
+            <input type="date" id="bday" name="bday">
+            <span class="fa fa-calendar"></span>
+            <br>
+            <br>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female">
+
+            <label for="Other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+
+            <p>A short description about yourself:</p>
+            <textarea name="description" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+
+            <label for="fav">Favorite Language:</label>
+            <select name="gender">
+                <option value="male">Java</option>
+                <option value="female">JavaScript</option>
+                <option value="decline">Ruby</option>
+                <option value="decline">C#</option>
+            </select>
+            <br>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </center>
+</body>
+
+</html>

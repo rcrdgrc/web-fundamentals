@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Functions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //attach a click event listener to all the img tags when the document is ready
+            $('#hideButton').click(function () {
+                $('#hide').hide();
+            });
+
+            $('#show').hide();
+            $('#showButton').click(function () {
+                $('#show').show();
+            });
+
+            $('#toggleButton').click(function () {
+                $('#toggle').toggle();
+            });
+
+            $('#slideDown').slideUp("slow");
+            $('#slideDownButton').click(function () {
+                $('#slideDown').slideDown("slow");
+            });
+
+            $('#slideUp').slideDown("slow");
+            $('#slideUpButton').click(function () {
+                $('#slideUp').slideUp();
+            });
+
+            $('#slideToggleButton').click(function () {
+                $('#slideToggle').slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>JQuery Functions</h1>
+        <br>
+        <div class="container-lg">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p id="hide">Test .click and .hide</p>
+                    <button id="hideButton" type="button" class="btn btn-success">Try It!</button>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p>Test .show</p>
+                    <p id="show">Heyyoooo</p>
+                    <button id="showButton" type="button" class="btn btn-danger">Try It!</button>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p>Test .toggle</p>
+                    <p id="toggle">Click Twice</p>
+                    <button id="toggleButton" type="button" class="btn btn-warning">Try It!</button>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p>Test .slideDown</p>
+                    <p id="slideDown">Slide Down</p>
+                    <button id="slideDownButton" type="button" class="btn btn-info">Try It!</button>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p>Test .slideUp</p>
+                    <p id="slideUp">Slide Up</p>
+                    <button id="slideUpButton" type="button" class="btn btn-light">Try It!</button>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p>Test .slideToggle</p>
+                    <p id="slideToggle">Slide Toggle</p>
+                    <button id="slideToggleButton" type="button" class="btn btn-dark">Try It!</button>
+                </div>
+            </div>
+            <br>
+        </div>
+    </center>
+</body>
+
+</html>

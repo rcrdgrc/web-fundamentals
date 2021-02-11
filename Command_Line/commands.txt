@@ -1,0 +1,31 @@
+Terminal commands
+
+pwd - present working directory, will show the location of current dir
+
+ls - will show a list of documents inside a directory
+
+cd - change directory. ex. cd nameOfDirecory
+
+cd ..  will go up one directory
+
+cd / will go to root directory
+
+touch - will create a new document ex. touch new_doc.txt ex. touch doc1.txt doc2.txt doc3.txt
+
+mkdir - will create new folder
+
+rm - will remove file
+
+rmdir - delete an empty folder
+
+rmdir -rf - will remove folder with files inside
+
+mv
+
+cp - will copy file ex. original.txt copy.txt
+
+cp -rf - will copy dir ex. originalDir copyDir
+
+open . - will open current file 
+
+open - will open file name you provide ex. open file.txt
